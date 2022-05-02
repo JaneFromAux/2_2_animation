@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: darkred;
+    animation-name: go;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+div:hover {
+    animation-play-state: paused;
+}
+
+@keyframes go {
+
+    0%,
+    100% {
+        transition: all 2s linear;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    25% {
+        background-color: yellow;
+        transition: all 2s linear;
+        position: absolute;
+        top: 0;
+        left: 1310px;
+    }
+
+    50% {
+
+        background-color: lime;
+        transition: all 2s linear;
+        position: absolute;
+        top: 700px;
+        left: 1310px;
+    }
+
+    75% {
+        background-color: blue;
+        transition: all 2s linear;
+        position: absolute;
+        top: 700px;
+        left: 0;
+    }
+}
